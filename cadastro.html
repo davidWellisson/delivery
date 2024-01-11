@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    
+
+
+    
+</head>
+<body>
+    <img class="wave" src="Novo Projeto (1) (1).png">
+    <div class="container">
+        <div class="img">
+            <img src="garoto.png">
+        </div>
+        <div class="login-content">
+            <form action="index.html" onsubmit="return validateForm()">
+                
+                <h2 class="title">Bem vindo!</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email:</h5>
+                        <input type="email" class="input" id="email" required>
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Senha:</h5>
+                        <input type="password" class="input" id="password" required>
+                        <i class="bi bi-eye-slash" id="btn-senha" onclick="mostrarsenha()"></i>
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Nome:</h5>
+                        <input type="text" class="input" id="name" required>
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="div">
+                        <h5>CPF:</h5>
+                        <input type="text" class="input" id="cpf" required>
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Telefone:</h5>
+                        <input type="tel" class="input" id="phone" required >
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="divcidade">
+                        <h5></h5>
+                        <select class="input" id="city" required>
+                            <option value="" disabled selected>Localização(cidade):</option>
+                            <option value="abaiara">Abaiara</option>
+                            <option value="acarape">Acarape</option>
+                            <option value="acarau">Acaráu</option>
+                            <option value="acopiara">Acopiara</option>
+                            <option value="aiuaba">Aiuaba</option>
+                            <option value="alcantaras">Alcântaras</option>
+                            <option value="altaneira">Altaneira</option>
+                            <option value="alto_santo">Alto Santo</option>
+                            <option value="amontada">Amontada</option>
+                            <option value="antonina_do_norte">Antonina do Norte</option>
+                            <option value="apuiares">Apuiarés</option>
+                            <option value="aquiraz">Aquiraz</option>
+                            <option value="aracati">Aracati</option>
+                            <option value="aracoiaba">Aracoiaba</option>
+                            <option value="ararenda">Ararendá</option>
+                            <option value="araripe">Araripe</option>
+                            <option value="aratuba">Aratuba</option>
+                            <option value="arneiroz">Arneiroz</option>
+                            <option value="assare">Assaré</option>
+                            <option value="aurora">Aurora</option>
+                            <option value="baixio">Baixio</option>
+                            <option value="banabuiu">Banabuiú</option>
+                            <option value="barbalha">Barbalha</option>
+                            <option value="barreira">Barreira</option>
+                            <option value="barro">Barro</option>
+                            <option value="barroquinha">Barroquinha</option>
+                            <option value="baturite">Baturité</option>
+                            <option value="beberibe">Beberibe</option>
+                            <option value="bela_cruz">Bela Cruz</option>
+                            <option value="boa_viagem">Boa Viagem</option>
+                            <option value="brejo_santo">Brejo Santo</option>
+                            <option value="camocim">Camocim</option>
+                            <option value="campos_sales">Campos Sales</option>
+                            <option value="caninde">Canindé</option>
+                            <option value="capistrano">Capistrano</option>
+                            <option value="caridade">Caridade</option>
+                            <option value="carire">Cariré</option>
+                            <option value="caririacu">Caririaçu</option>
+                            <option value="carius">Cariús</option>
+                            <option value="carnaubal">Carnaubal</option>
+                            <option value="cascavel">Cascavel</option>
+                            <option value="catarina">Catarina</option>
+                            <option value="catunda">Catunda</option>
+                            <option value="caucaia">Caucaia</option>
+                            <option value="cedro">Cedro</option>
+                            <option value="chaval">Chaval</option>
+                            <option value="choro">Choró</option>
+                            <option value="chorozinho">Chorozinho</option>
+                            <option value="coite">Coité</option>
+                            <option value="coreau">Coreaú</option>
+                            <option value="crateus">Crateús</option>
+                            <option value="crato">Crato</option>
+                            <option value="croata">Croatá</option>
+                            <option value="cruz">Cruz</option>
+                            <option value="deputado_irmao_da_cruz">Deputado Irmão da Cruz</option>
+                            <option value="ererê">Ererê</option>
+                            <option value="eusebio">Eusébio</option>
+                            <option value="farias_brito">Farias Brito</option>
+                            <option value="forquilha">Forquilha</option>
+                            <option value="fortaleza">Fortaleza</option>
+                            <option value="fortim">Fortim</option>
+                            <option value="frecheirinha">Frecheirinha</option>
+                            <option value="general_sampaio">General Sampaio</option>
+                            <option value="graca">Graça</option>
+                            <option value="granja">Granja</option>
+                            <option value="granjeiro">Granjeiro</option>
+                            <option value="groairas">Groaíras</option>
+                            <option value="guaiuba">Guaiúba</option>
+                            <option value="guaraciaba_do_norte">Guaraciaba do Norte</option>
+                            <option value="guaramiranga">Guaramiranga</option>
+                            <option value="hidrolandia">Hidrolândia</option>
+                            <option value="horizonte">Horizonte</option>
+                            <option value="ibaretama">Ibaretama</option>
+                            <option value="ibiapina">Ibiapina</option>
+                            <option value="ibicuitinga">Ibicuitinga</option>
+                            <option value="icapui">Icapuí</option>
+                            <option value="ico">Icó</option>
+                            <option value="iguatu">Iguatu</option>
+                            <option value="independencia">Independência</option>
+                            <option value="ipaporanga">Ipaporanga</option>
+                            <option value="ipaumirim">Ipaumirim</option>
+                            <option value="ipu">Ipu</option>
+                            <option value="ipueiras">Ipueiras</option>
+                            <option value="iracema">Iracema</option>
+                            <option value="iraucuba">Irauçuba</option>
+                            <option value="itaitinga">Itaitinga</option>
+                            <option value="itapage">Itapagé</option>
+                            <option value="itapipoca">Itapipoca</option>
+                            <option value="itapiuna">Itapiúna</option>
+                            <option value="itarema">Itarema</option>
+                            <option value="itatira">Itatira</option>
+                            <option value="jaguaretama">Jaguaretama</option>
+                            <option value="jaguaribara">Jaguaribara</option>
+                            <option value="jaguaribe">Jaguaribe</option>
+                            <option value="jaguaruana">Jaguaruana</option>
+                            <option value="jardim">Jardim</option>
+                            <option value="jati">Jati</option>
+                            <option value="jijoca_de_jericoacoara">Jijoca de Jericoacoara</option>
+                            <option value="juazeiro_do_norte">Juazeiro do Norte</option>
+                            <option value="jucas">Jucás</option>
+                            <option value="lavras_da_mangabeira">Lavras da Mangabeira</option>
+                            <option value="limoeiro_do_norte">Limoeiro do Norte</option>
+                            <option value="madalena">Madalena</option>
+                            <option value="maracanau">Maracanaú</option>
+                            <option value="maranguape">Maranguape</option>
+                            <option value="marco">Marco</option>
+                            <option value="martinopole">Martinópole</option>
+                            <option value="massape">Massapê</option>
+                            <option value="mauriti">Mauriti</option>
+                            <option value="meruoca">Meruoca</option>
+                            <option value="milagres">Milagres</option>
+                            <option value="milha">Milhã</option>
+                            <option value="miraima">Miraíma</option>
+                            <option value="missao_velha">Missão Velha</option>
+                            <option value="mombaca">Mombaça</option>
+                            <option value="monsenhor_tabosa">Monsenhor Tabosa</option>
+                            <option value="morada_nova">Morada Nova</option>
+                            <option value="moraújo">Moraújo</option>
+                            <option value="morrinhos">Morrinhos</option>
+                            <option value="mucambo">Mucambo</option>
+                            <option value="mulungu">Mulungu</option>
+                            <option value="nova_olinda">Nova Olinda</option>
+                            <option value="nova_russas">Nova Russas</option>
+                            <option value="novacruz">Novacruz</option>
+                            <option value="ocara">Ocara</option>
+                            <option value="oros">Orós</option>
+                            <option value="pacajus">Pacajus</option>
+                            <option value="pacatuba">Pacatuba</option>
+                            <option value="pacoti">Pacoti</option>
+                            <option value="pacuja">Pacujá</option>
+                            <option value="palhano">Palhano</option>
+                            <option value="palmacia">Palmácia</option>
+                            <option value="paracuru">Paracuru</option>
+                            <option value="paraipaba">Paraipaba</option>
+                            <option value="parambu">Parambu</option>
+                            <option value="paramoti">Paramoti</option>
+                            <option value="pedra_branca">Pedra Branca</option>
+                            <option value="penaforte">Penaforte</option>
+                            <option value="pentecoste">Pentecoste</option>
+                            <option value="pereiro">Pereiro</option>
+                            <option value="pindoretama">Pindoretama</option>
+                            <option value="piquet_carneiro">Piquet Carneiro</option>
+                            <option value="pirabibu">Pirabibu</option>
+                            <option value="pirambu">Pirambu</option>
+                            <option value="piranga">Piranga</option>
+                            <option value="pires_ferreira">Pires Ferreira</option>
+                            <option value="poranga">Poranga</option>
+                            <option value="porfirio_sampaio">Porfírio Sampaio</option>
+                            <option value="porteiras">Porteiras</option>
+                            <option value="potengi">Potengi</option>
+                            <option value="potiretama">Potiretama</option>
+                            <option value="quiterianopolis">Quiterianópolis</option>
+                            <option value="quixada">Quixadá</option>
+                            <option value="quixelo">Quixelô</option>
+                            <option value="quixeramobim">Quixeramobim</option>
+                            <option value="quixere">Quixeré</option>
+                            <option value="redencao">Redenção</option>
+                            <option value="reriutaba">Reriutaba</option>
+                            <option value="russas">Russas</option>
+                            <option value="saboeiro">Saboeiro</option>
+                            <option value="salitre">Salitre</option>
+                            <option value="santana_do_acarau">Santana do Acaraú</option>
+                            <option value="santana_do_cariri">Santana do Cariri</option>
+                            <option value="santa_quiteria">Santa Quitéria</option>
+                            <option value="sao_benedito">São Benedito</option>
+                            <option value="sao_goncalo_do_amarante">São Gonçalo do Amarante</option>
+                            <option value="sao_joao_do_jaguaribe">São João do Jaguaribe</option>
+                            <option value="sao_luis_do_curu">São Luís do Curu</option>
+                            <option value="senador_pompeu">Senador Pompeu</option>
+                            <option value="senador_sa">Senador Sá</option>
+                            <option value="sobral">Sobral</option>
+                            <option value="solonopole">Solonópole</option>
+                            <option value="tabuleiro_do_norte">Tabuleiro do Norte</option>
+                            <option value="tamboril">Tamboril</option>
+                            <option value="taua">Tauá</option>
+                            <option value="tejucuoca">Tejuçuoca</option>
+                            <option value="tiangua">Tianguá</option>
+                            <option value="trairi">Trairi</option>
+                            <option value="tururu">Tururu</option>
+                            <option value="ubajara">Ubajara</option>
+                            <option value="umari">Umari</option>
+                            <option value="umirim">Umirim</option>
+                            <option value="uruburetama">Uruburetama</option>
+                            <option value="uva">Uva</option>
+                            <option value="varjota">Varjota</option>
+                            <option value="varzea_alegre">Várzea Alegre</option>
+                            <option value="vicosa_do_ceara">Viçosa do Ceará</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Data de Nascimento:</h5>
+                        <input type="tex" class="input" id="birthdate" required>
+                    </div>
+                </div>
+                <p id="ageWarning" style="color: red;"></p>
+                <input type="submit" class="btn" value="Cadastrar">
+              
+            </form>
+        </div>
+    </div>
+
+   
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
